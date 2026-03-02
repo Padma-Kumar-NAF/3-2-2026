@@ -1,7 +1,19 @@
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('./media/aileron-regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('./media/aileron-bold.otf') format('opentype');
+    font-weight: 700;
+}
+
 * {
 
     margin: 0;
-
     padding: 0;
 
     box-sizing: border-box;
@@ -13,9 +25,8 @@
 }
 
 .client-card {
-    background: black;
+    background: rgba(217, 214, 214, 0.097);
     padding: 80px;
-    border-radius: 16px;
     display: flex;
     align-items: center;
     gap: 100px;
@@ -56,17 +67,6 @@
     max-width: 700px;
 }
 
-@media (max-width: 992px) {
-    .client-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 50px;
-    }
-
-    .client-info p {
-        font-size: 18px;
-    }
-}
 
 body {
 
@@ -118,47 +118,25 @@ nav a {
 
 }
 
-nav a:hover {
-
-    color: #3b82f6;
-
-}
-
 .hire-btn {
 
     background: linear-gradient(45deg, #2563eb, #1d4ed8);
-
     padding: 8px 18px;
-
     border-radius: 6px;
-
 }
-
-/* Hero Section */
 
 .hero {
-
     height: 100vh;
-
     display: flex;
-
     align-items: center;
-
-    /* justify-content: center; */
-
     padding: 0 100px;
     overflow: hidden;
-
     position: relative;
-
 }
-
-/* Hero Content */
 
 .hero-content {
     position: relative;
     z-index: 2;
-
     max-width: 550px;
     padding-right: 100px;
     padding-left: 200px;
@@ -166,39 +144,23 @@ nav a:hover {
 }
 
 .hero-content h1 {
-
     font-size: 64px;
-
     font-weight: 800;
-
     line-height: 1.1;
-
     margin-bottom: 40px;
     margin-left: 6rem;
-
 }
 
-/* Button */
-
 .primary-btn {
-
     display: inline-block;
-
     background: linear-gradient(45deg, #2563eb, #1d4ed8);
-
     padding: 14px 28px;
-
     border-radius: 6px;
-
     text-decoration: none;
-
     color: white;
-
     font-weight: 500;
-
     transition: 0.3s;
     margin-left: 6rem;
-
 }
 
 .primary-btn:hover {
@@ -207,7 +169,6 @@ nav a:hover {
 
 }
 
-/* Image */
 .hero-image{
     position: absolute;
     right: -100px;
@@ -223,9 +184,6 @@ nav a:hover {
     margin-top: 7rem;
 
 }
-
-
-/* Vertical Dots */
 
 .dots {
 
@@ -269,17 +227,6 @@ nav a:hover {
     color: #1d4ed8;
 }
 
-@font-face {
-    font-family: 'Aileron';
-    src: url('./media/aileron-regular.otf') format('opentype');
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Aileron';
-    src: url('./media/aileron-bold.otf') format('opentype');
-    font-weight: 700;
-}
 
 * {
     margin: 0;
@@ -289,7 +236,6 @@ nav a:hover {
 
 body {
     font-family: 'Aileron', sans-serif;
-    background-color: #0f0f1a;
     color: white;
 }
 
@@ -336,38 +282,8 @@ body {
     width: 100%;
     height: 260px;
     object-fit: cover;
-    border-radius: 12px;
 }
 
-@media (max-width: 992px) {
-    #MyWork {
-        padding: 60px 40px;
-    }
-
-    .images {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    #MyWork {
-        padding: 40px 20px;
-    }
-
-    .Text h2 {
-        font-size: 36px;
-    }
-
-    .Text p {
-        font-size: 16px;
-    }
-
-    .images {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* HIRE SECTION */
 
 #Hire {
     padding: 120px;
@@ -378,8 +294,6 @@ body {
     justify-content: space-between;
     gap: 100px;
 }
-
-/* FORM */
 
 .contact-form {
     flex: 1;
@@ -410,8 +324,6 @@ body {
     border-color: #5f9cff;
 }
 
-/* BUTTON */
-
 .send-btn {
     margin-top: 30px;
     width: 160px;
@@ -430,7 +342,6 @@ body {
     transform: translateY(-3px);
 }
 
-/* RIGHT SIDE */
 
 .contact-info {
     flex: 1;
@@ -473,6 +384,42 @@ body {
     background: #5f63ff;
 }
 
+
+.hero-image img {
+    transform: scaleX(-1);
+}
+
+
+
+@media (max-width: 992px) {
+    #MyWork {
+        padding: 60px 40px;
+    }
+
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    #MyWork {
+        padding: 40px 20px;
+    }
+
+    .Text h2 {
+        font-size: 36px;
+    }
+
+    .Text p {
+        font-size: 16px;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 @media (max-width: 992px) {
     .hire-container {
         flex-direction: column;
@@ -484,6 +431,15 @@ body {
     }
 }
 
-.hero-image img {
-    transform: scaleX(-1);
+
+@media (max-width: 992px) {
+    .client-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px;
+    }
+
+    .client-info p {
+        font-size: 18px;
+    }
 }
